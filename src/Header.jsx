@@ -25,7 +25,7 @@ function Header() {
           <input type="text" />
         </div>
       </div>
-      <div className="header__middle">
+      <div className="header__center">
         <div className="header__option">
           <HomeIcon fontSize="large" />
         </div>
@@ -42,7 +42,25 @@ function Header() {
           <SupervisedUserCircleIcon fontSize="large" />
         </div>
       </div>
-      <div className="header__right"></div>
+      <div className="header__right">
+          <div className="header__info">
+              <Avatar/>
+              <h4>Saksham Jaiswal</h4>
+          </div>
+          <IconButton>
+              <AddIcon fontSize='large'/>
+          </IconButton>
+          <IconButton>
+              <ForumIcon fontSize='large'/>
+          </IconButton>
+          <IconButton>
+              <NotificationsActiveIcon fontSize='large'/>
+          </IconButton>
+          <IconButton>
+              <ArrowDropDownOutlinedIcon fontSize='large'/>
+          </IconButton>
+
+      </div>
     </div>
   );
 }
