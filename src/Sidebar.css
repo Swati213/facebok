@@ -1,0 +1,14 @@
+.sidebar {
+    padding: 25px 0px;
+    width: 100%;
+    flex: 0.33;
+ 
+    overflow-y: scroll;
+height: 78vh;
+  }
+/* .sidebar:hover{
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 4px;
+  }   */

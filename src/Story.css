@@ -11,7 +11,7 @@
   transition: transform 100ms ease-in;
   cursor: pointer;
   margin-top: 10px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 .story:hover{
     transform: scale(1.07);
