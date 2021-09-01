@@ -3,12 +3,12 @@ import "./Feed.css";
 import StoryReel from "./StoryReel";
 import MessageSender from "./MessageSender";
 import Post from "./Post";
-import { useStateValue } from "./StateProvider";
+
 import { useState, useEffect } from "react";
 import db from "./firebase";
 
 function Feed() {
-  const [{ user }, dispatch] = useStateValue();
+
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {

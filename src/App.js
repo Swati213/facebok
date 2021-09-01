@@ -9,7 +9,7 @@ import { useStateValue } from './StateProvider';
 
 function App() {
 
-const [{user},reducer]=useStateValue()
+const [{user}]=useStateValue()
   return (
     <div className="app">
       {!user ? <Login/> :  <>   <Header/>
