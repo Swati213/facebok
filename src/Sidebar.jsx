@@ -1,15 +1,16 @@
 import React from "react";
 import "./Sidebar.css";
 import SidebarRow from "./SidebarRow";
+import { useStateValue } from './StateProvider'
+
 
 function Sidebar() {
+  const [{user},dispatch]=useStateValue()
+ 
   return (
     <div className="sidebar">
       <div className="sidebar__top">
-        <SidebarRow
-        // src = {user.photoURL}
-        // title = {user.displayName}
-        />
+        <SidebarRow src={user.photoURL} title={user.displayName} />
         <SidebarRow
           url="https://static.xx.fbcdn.net/rsrc.php/v3/yg/r/kOxV5aCYUAE.png"
           title="COVID-19 information Centre"
@@ -108,7 +109,6 @@ function Sidebar() {
           title="Weather"
         />
       </div>
-      
     </div>
   );
 }
