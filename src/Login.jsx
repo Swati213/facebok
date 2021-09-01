@@ -9,7 +9,8 @@ import { actionTypes } from './reducer'
 
 
 function Login() {
-    const [{},dispatch]=useStateValue()
+    const [state,dispatch]=useStateValue()
+    // console.log(state)
     const signIn=(e)=>{
         auth.signInWithPopup(provider)
         .then(result => {
@@ -18,7 +19,7 @@ function Login() {
                 type: actionTypes.SET_USER,
                 user: result.user
             })
-            console.log(result.user)
+            // console.log(result.user)
         })
         .catch((error) => alert(error.message))
     }
